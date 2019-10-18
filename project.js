@@ -20,9 +20,9 @@ fetch(url)
     .then(res => {
       console.log("success!", res.list[0].weather)
       let weather = res.list[0].weather
-      for (let i =0; i < weather.length; i++) {
-        console.log(weather[i])
-        .panel.innerText = weather[i]
+      for (let i =0; i < res.list.length; i++) {
+        console.log(res.list[i].weather)
+        // .panel.innerText = weather[i]
       }
       })
     .catch(err => console.log("Something went wrong", err));
