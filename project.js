@@ -1,3 +1,11 @@
+const url = ("http://api.openweathermap.org/data/2.5/forecast?zip=20005,us")
+
+fetch(url)
+    .then(res => res.json())
+    .then(res => console.log("success!", res))
+  .catch(err => console.log("Something went wrong", err));
+
+
 let acc = document.getElementsByClassName("accordion");
 let i;
 
