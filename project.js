@@ -1,18 +1,14 @@
-const url = "https://api.punkapi.com/v2/beers/random"
+let acc = document.getElementsByClassName("accordion");
+let i;
 
-fetch(url)
-    .then(res => res.json())
-    .then(res => console.log("success!", res))
-	.catch(err => console.log("Something went wrong", err));
-
-let buttons = document.querySelector(".previous.next");
-let beer = document.querySelector(".randomBeerImg");
-
-buttons.addEventListener("click", function(evt){
-	evt.preventDefault();
-
-	 fetch(url)
-        .then(res => res.json())
-        .then(res => randomBeerImg.setAttribute('src', res[0].url))
-        .catch(err => console.log("Something went wrong", err));
-})
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}

@@ -1,42 +1,31 @@
 body {
-	background-color: #262673;
-	margin: 0;
+	background-image: url("https://i.pinimg.com/originals/b6/65/a2/b665a2c72476a408bf3e6de098e0f0ee.jpg");
+	background-repeat: no-repeat;
 }
 
-h1, h3 {
-	font-family: 'Noto Sans', sans-serif;
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  padding: 18px;
+  width: 90%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.5s;
 }
 
-img {
-    height: 350px;
-    width: auto;
-    box-shadow: 10px 10px 32px -12px rgba(0,0,0,0.75);
-}
-	
-
-
-a {
-	text-decoration: none;
-	display: inline-flex;
-	padding: 8px 16px;
-	margin: 20px;
-	font-family: 'Noto Sans', sans-serif;
-
+.active, .accordion:hover {
+  background-color: #ccc;
 }
 
-a:hover {
-	background-color: red;
-	color: white;
-}
-
-.previous {
-	background-color: white;
-	color: red;
-}
-
-.next {
-	background-color: white;
-	color: red;
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  width: 85.36%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 
