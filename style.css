@@ -1,0 +1,8 @@
+body {
+	background-color: #262673;
+	display: flex;
+}
+
+h1, h3 {
+	font-family: 'Noto Sans', sans-serif;
+}
