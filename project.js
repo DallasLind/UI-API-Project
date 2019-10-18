@@ -1,4 +1,6 @@
-const url = ("api.openweathermap.org/data/2.5/forecast?zip=20005&APPID=28b02b409b42c315420779b2660708b7")
+const url = ("http://api.openweathermap.org/data/2.5/forecast?zip=20005&APPID=28b02b409b42c315420779b2660708b7")
+const ul = document.querySelector('ul')
+
 
 fetch(url)
     .then(res => res.json())
