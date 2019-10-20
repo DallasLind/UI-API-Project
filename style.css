@@ -8,6 +8,11 @@ h1, h3 {
 	font-family: 'Noto Sans' sans-serif;
 }
 
+p {
+  justify-content: center;
+  display: flex;
+}
+
 .accordion {
   background-color: #eee;
   color: #444;
@@ -32,6 +37,12 @@ h1, h3 {
   transition: max-height 0.2s ease-out;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+
+}
 
 
 
