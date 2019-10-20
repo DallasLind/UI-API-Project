@@ -14,10 +14,17 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-const url = ("https://api.darksky.net/forecast/3b390504334b941ad91731bb9adf0af9/42.3601,-71.0589,255657600?exclude=[currently],[flags],[minutely],[hourly]")
+const url = ("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/3b390504334b941ad91731bb9adf0af9/42.3601,-71.0589,255657600?exclude=[currently],[flags],[minutely],[hourly]")
+const panels = document.querySelector('panel');
+console.log(panels)
 
 // Menu Items for Accordion
 
+fetch(url)
+  .then(res => res.json())
+  .then(res => {
 
+
+  })
 
     
