@@ -1,3 +1,4 @@
+//accordion
 let acc = document.getElementsByClassName("accordion");
 let i;
 
@@ -13,22 +14,10 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-const url = ("http://api.openweathermap.org/data/2.5/forecast?zip=20005&cnt=5&APPID=28b02b409b42c315420779b2660708b7")
-const ul = document.querySelector('ul')
+const url = ("https://api.darksky.net/forecast/3b390504334b941ad91731bb9adf0af9/42.3601,-71.0589,255657600?exclude=[currently],[flags],[minutely],[hourly]")
+
+// Menu Items for Accordion
 
 
-fetch(url)
-    .then(res => res.json())
-    .then(res => {
-      console.log("success!", res.list[0].weather.main)
-      let weather = res.list[0].weather.main
-      for (let i =0; i < res.list.length; i++) {
-        console.log(res.list[i].weather[i].main)
-        let li = document.createElement('li')
-        li.innerText = res.list[i].weather[i].main
-        ul.appendChild(li)
-      }
-      })
-    .catch(err => console.log("Something went wrong", err));
 
     
