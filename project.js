@@ -29,7 +29,7 @@ let button = document.querySelectorAll(".button");
 fetch(url)
   .then(res => res.json())
   .then(res => {
-      console.log("success!", res.daily.data[0].summay)
+      console.log("success!", res.daily.data[0].summary)
       let summary = document.createElement("P");
       summary.innerText = res.daily.data[0].summary;
       panel1Div.appendChild(summary);
@@ -59,4 +59,4 @@ fetch(url)
 .catch(err => console.log("err", err))
 
 
-  
+
