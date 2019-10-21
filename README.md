@@ -9,9 +9,16 @@ This is a project for the General Assembly Software Engineering Immersive progra
 * Javascript
 
 ### UI Design 
-![img title](images/ScreenshotUI.png)
+![img title](images/screen2.png)
 
 ### Future Goals
 * Make it more responsive with backgrounds changing depending on the forecast
 * More mobile-friendly
 * More visually appealing
+
+### Notes
+* The data for real-time is off for some reason, so I'll have to investigate a little more thoroughly into why the weather data is incorrect, whether it be the API or on my end. 
+
+
+### Build Status
+![](https://img.shields.io/badge/BUILD-IN%20PROGRESS-informational)
