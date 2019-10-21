@@ -29,26 +29,31 @@ let button = document.querySelectorAll(".button");
 fetch(url)
   .then(res => res.json())
   .then(res => {
-      console.log("success!", res.daily.data[0].icon)
+      console.log("success!", res.daily.data[0].summay)
       let summary = document.createElement("P");
-      summary.innerText = res.daily.data[0].icon;
+      summary.innerText = res.daily.data[0].summary;
       panel1Div.appendChild(summary);
+
 
       let temperatureLow = document.createElement("P");
       temperatureLow.innerText = res.daily.data[0].apparentTemperatureLow;
       panel2Div.appendChild(temperatureLow);
+      temperatureLow.insertAdjacentHTML('beforeend', "°C");
 
       let temperatureHigh = document.createElement("P");
       temperatureHigh.innerText = res.daily.data[0].apparentTemperatureHigh;
       panel3Div.appendChild(temperatureHigh);
+      temperatureHigh.insertAdjacentHTML('beforeend', "°C");
 
       let precipitation = document.createElement("P");
       precipitation.innerText = res.daily.data[0].precipAccumulation;
       panel4Div.appendChild(precipitation);
+      precipitation.insertAdjacentHTML('beforeend', " '' ");
 
       let wind = document.createElement("P");
       wind.innerText = res.daily.data[0].windSpeed;
       panel5Div.appendChild(wind);
+      wind.insertAdjacentHTML("beforeend", "mph");
       })
     
 .catch(err => console.log("err", err))
