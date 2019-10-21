@@ -22,3 +22,10 @@ This is a project for the General Assembly Software Engineering Immersive progra
 
 ### Build Status
 ![](https://img.shields.io/badge/BUILD-IN%20PROGRESS-informational)
+
+### How to Install
+1. Fork and clone this repository
+2. Open index.html in your browser
+
+### Credit
+Thanks to the Dark Sky API for the data provided!
